@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #4682b4;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-color: #010101;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+}
+
+button,
+p {
+  color: white;
+}
+
+.header-text {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header-sub-text {
+  font-size: 10px;
+  color: #ccc;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+.header-sub-text:hover {
+  color: white;
+}
+
+.logo-section button {
+  background-color: green;
+  color: black;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.logo-section button:hover {
+  color: white;
+}
+
+.gray-button {
+  background-color: #313131;
+  cursor: pointer;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.gray-button:hover {
+  transition: all 0.2s;
+  background-color: #757575;
+}
+
+.signup-button {
+  background-color: #00ae1c;
+  cursor: pointer;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: black;
+  transition: all 0.3s;
+}
+
+.signup-button:hover {
+  background-color: #00600f;
+  color: white;
+}
+
+.form {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 20%;
+  margin: auto;
+  margin-top: 8%;
+  padding: 40px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.form h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form input {
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+  padding-top: 20px;
+}
+
+.form button {
+  margin-bottom: 40px;
+  background-color: #add8e6;
+  border: none;
+  padding: 15px;
+  color: black;
+  border-radius: 4px;
+}
+
+.form a {
+  text-decoration: none;
+  color: #add8e6;
+  margin-left: 4px;
+}
+
+::placeholder {
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+}
+
+input:focus::placeholder {
+  transform: translateY(-15px);
+  transition: all 0.1s;
+  color: white;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  position: fixed;
+  width: 300px;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px 8px 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-section button {
+    display: none;
+  }
+}
